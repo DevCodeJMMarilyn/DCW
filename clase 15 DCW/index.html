@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semana 15</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <style>
+        .container div {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 15px;
+            border: 1px solid #0d6efd;
+            color: white;
+        }
+
+        .container {
+            background: #0d6efd;
+            margin-bottom: 20px;
+        }
+    </style>
+    <div class="container">
+        <div class="row my-5">
+
+            <div class="col">
+                <h4>Tipos de Display Flex</h4>
+                <hr>
+                <div class="bg-primary text-white p-3 mb-3">
+                    <strong>display-flex:</strong> Activa el modo Flexbox en el contenedor.
+                </div>
+                <div class="bg-primary text-white p-3 mb-3 d-inline-flex">
+                    <strong>display-inline-flex:</strong> Elemento en línea con comportamiento
+                    Flexbox.
+                </div>
+                <hr>
+                <div class="container d-flex flex-row">
+                    <div>Caja 1</div>
+                    <div>Caja 2</div>
+                    <div>Caja 3</div>
+                </div>
+    
+                <hr>
+                <h4> Justificar el contenido (alineación horizontal)</h4>
+                <div class="d-flex justify-content-start"> <!-- Alinea a la izquierda -->
+                    <div>Caja 1</div>
+                </div>
+    
+                <div class="d-flex justify-content-center"> <!-- Centra -->
+                    <div>Caja 2</div>
+                </div>
+    
+                <div class="d-flex justify-content-end">
+                    <div>Caja 3</div>
+                </div> <!-- Alinea a la derecha -->
+    
+                <div class="d-flex justify-content-between">
+                    <div>Caja 4</div>
+                </div> <!-- Espacio entre elementos -->
+    
+                <div class="d-flex justify-content-around">
+                    <div>Caja 5</div>
+                </div> <!-- Espacios iguales a los lados -->
+    
+                <div class="d-flex justify-content-evenly">
+                    <div>Caja 6</div>
+                </div> <!-- Espacios proporcionales -->
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+
+</html>
