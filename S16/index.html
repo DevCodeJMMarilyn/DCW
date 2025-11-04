@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Semana 16</title>
+</head>
+<body class="bg-light text-dark">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
+        <div class="container">
+            <a class="navbar-brand" href="#">WebSite</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+     <div class="container">
+        <header class="row g-3">
+            <div class="col-12">
+                <h1 class="h3 m-0">Header</h1>
+                <p class="m-0">Columnas</p>
+            </div>
+         </header>
+
+         <section class="contenedor-main row aling-items-center g-3">
+            <!-- Main + side (fila 2) -->
+            <main class="col-md-8">
+                <h2>Main</h2>
+                <p class="d-none d-md-block">8 columnas (>= md)</p>
+                <p class="d-block d-md-none">12 columnas (&lt;md)</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum exercitationem laudantium aut neque, doloremque praesentium maxime cumque illo repudiandae aspernatur laborum esse ipsum impedit, alias ullam atque porro pariatur? Amet.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi dolore adipisci, similique asperiores nesciunt quaerat nihil aut nulla alias, dolorum ipsum perspiciatis molestiae expedita, doloremque cumque laboriosam dolores vitae harum?</p>
+            </main>
+
+            <aside class="col-md-4">
+                <h3>Aside</h3>
+                <p class="d-none d-md-block small text-muted">4 columnas (>= md)</p>
+                <p class="d-block d-md-none small text-muted">12 columnas (&lt;md)</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati officiis reiciendis pariatur commodi rerum sed labore, earum, delectus molestiae nisi, officia provident voluptatem nesciunt fugiat debitis similique magni mollitia modi.</p>
+            </aside>
+         </section>
+
+         <!-- Widgets (fila 3) -->
+          <section class="row widgets justify-content-between mb-3 g-3">
+            <!-- Columna 1 -->
+                <div class="col-12 col-md-4 col-lg-3 mb-3">
+                    <h4 class="h6 m-0">Widgets 1</h4>
+                    <!-- etiquetas responsivas -->
+                     <p class="d-none d-lg-block small m-0">3 columnas (>= lg)</p>
+                     <p class="d-none d-md-block d-lg-none small m-0">4 columnas (solo md)</p>
+                     <p class="d-block d-md-none small m-0">12 columnas (&lt;md)</p>
+                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati officiis reiciendis pariatur commodi rerum sed labore, earum, delectus molestiae nisi, officia provident voluptatem nesciunt fugiat debitis similique magni mollitia modi.</p>
+                </div>
+
+                <!-- Duplica dos veces para 3 widgets -->
+                <div class="col-12 col-md-4 col-lg-3 mb-3">
+                    <h4 class="h6 m-0">Widgets 2</h4>
+                    <!-- etiquetas responsivas -->
+                     <p class="d-none d-lg-block small m-0">3 columnas (>= lg)</p>
+                     <p class="d-none d-md-block d-lg-none small m-0">4 columnas (solo md)</p>
+                     <p class="d-block d-md-none small m-0">12 columnas (&lt;md)</p>
+                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati officiis reiciendis pariatur commodi rerum sed labore, earum, delectus molestiae nisi, officia provident voluptatem nesciunt fugiat debitis similique magni mollitia modi.</p>
+                </div>
+
+                <div class="col-12 col-md-4 col-lg-3 mb-3">
+                    <h4 class="h6 m-0">Widgets 3</h4>
+                    <!-- etiquetas responsivas -->
+                     <p class="d-none d-lg-block small m-0">3 columnas (>= lg)</p>
+                     <p class="d-none d-md-block d-lg-none small m-0">4 columnas (solo md)</p>
+                     <p class="d-block d-md-none small m-0">12 columnas (&lt;md)</p>
+                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati officiis reiciendis pariatur commodi rerum sed labore, earum, delectus molestiae nisi, officia provident voluptatem nesciunt fugiat debitis similique magni mollitia modi.</p>
+                </div>
+          </section>
+
+          <!-- Footer (fila 4) -->
+           <footer class="row g-3">
+            <div class="col-12 bg-dark text-white py-3 px-4 rounded-3">
+                <h4>Footer</h4>
+                <p class="m-0 small">12 columnas en todos los tamaños</p>
+            </div>
+           </footer>
+     </div>
+     
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
