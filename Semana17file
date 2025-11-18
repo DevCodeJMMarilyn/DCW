@@ -1,0 +1,73 @@
+import './style.css'
+
+document.querySelector('#app').innerHTML = `
+  <header class="min-h-screen bg-bg flex flex-col items-center px-4">
+    <!-- BARRA DE NAVIDAD -->
+    <nav class="w-full max-w-5xl flex items-center justify-between py-6">
+      <!-- Logotipo / Marca -->
+      <a href="#" class="flex items-center gap-2">
+        <span class="font-title text-2xl text-white">Kodigo Labs</span>
+      </a>
+
+      <!-- Enlaces -->
+      <ul class="hidden md:flex items-center gap-8 font-body text-sm text-slate-100">
+        <li><a href="#" class="hover:text-primary transition">Inicio</a></li>
+        <li><a href="#" class="hover:text-primary transition">Talleres</a></li>
+        <li><a href="#" class="hover:text-primary transition">Portafolio</a></li>
+      </ul>
+
+      <!-- Botón -->
+      <button
+        class="hidden md:inline-flex items-center justify-center px-5 py-2 rounded-full
+               bg-primary text-slate-950 text-sm font-body font-semibold
+               hover:bg-primary-dark transition">
+        Iniciar sesión
+      </button>
+
+      <!-- Menú móvil (solo iconito por ahora, sin JS) -->
+      <button class="md:hidden inline-flex items-center justify-center p-2 rounded-full text-slate-100 border border-slate-500/60">
+        <span class="sr-only">Abrir menú</span>
+        ★
+      </button>
+    </nav>
+
+    <!-- HERO -->
+    <div class="relative w-full max-w-5xl mb-10">
+      <!-- Imagen de fondo -->
+      <img
+        src="https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=1600"
+        alt="Personas trabajando en diseño web"
+        class="w-full h-[420px] object-cover rounded-3xl"
+      />
+
+      <!-- Rectángulo sombra / overlay -->
+      <div class="absolute inset-0 bg-slate-900/60 rounded-3xl"></div>
+
+      <!-- Contenido del héroe -->
+      <div class="absolute inset-0 flex flex-col justify-center px-8 md:px-16 gap-4">
+        <p class="font-body text-sm font-semibold text-sky-300 tracking-[0.25em] uppercase">
+          Taller práctico
+        </p>
+
+        <h1 class="font-title text-4xl md:text-5xl text-white drop-shadow-lg">
+          Inicia tu proyecto con Vite y Tailwind CSS
+        </h1>
+
+        <p class="font-body text-slate-100 md:text-lg max-w-xl">
+          Aprende a configurar desde cero un entorno moderno con Vite, instala Tailwind por npm
+          e integra Google Fonts y variables personalizadas para crear interfaces responsivas
+        </p>
+
+        <div class="mt-4 flex flex-wrap items-center gap-3">
+          <button
+            class="font-body inline-flex items-center justify-center px-6 py-3 rounded-full bg-primary text-slate-950 text-sm font-semibold hover:bg-primary-dark transition">
+            Empezar demo
+          </button>
+          <span class="font-body text-slate-200 text-sm">
+            Vanilla JS · Tailwind CSS · Vite
+          </span>
+        </div>
+      </div>
+    </div>
+  </header>
+`
