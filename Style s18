@@ -4,29 +4,29 @@
 /* 1) Importar Tailwind primero */
 @import "tailwindcss";
 
-/* 3) Definir tokens de diseño con @theme */
-@tema {
-  /* Tipografías: generan utilidades font-body y font-title */
+/* 3) Definir design tokens con @theme */
+@theme {
+  /* TipografÃ­as: generan utilidades font-body y font-title */
   --font-body: "Lato", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  --font-title: "Escritura de baile", cursiva;
+  --font-title: "Dancing Script", cursive;
 
   /* Colores personalizados: generan bg-bg, bg-primary, text-primary, etc. */
-  --color-bg: #020617; /* Fondo general (azul muy oscuro) */
-  --color-primary: #0ea5e9; /* Celeste principal */
-  --color-primary-dark: #0369a1;/* Celeste más oscuro para hover */
+  --color-bg: #020617;          /* Fondo general (azul muy oscuro) */
+  --color-primary: #0ea5e9;     /* Celeste principal */
+  --color-primary-dark: #0369a1;/* Celeste mÃ¡s oscuro para hover */
 
-  /* (Opcional) Puedes redefinir otros tokens aquí si quieres */
+  /* (Opcional) Puedes redefinir otros tokens aquÃ­ si quieres */
 }
 
-/* 4) Estilos globales mínimos */
-cuerpo {
+/* 4) Estilos globales mÃ­nimos */
+body {
   @apply font-body bg-bg text-slate-100 antialiased;
 }
 
-/* 5) (Opcional) Pequeñas utilidades personalizadas si llegas a necesitarlas */
+/* 5) (Opcional) PequeÃ±as utilidades personalizadas si llegas a necesitarlas */
 
 .btn-primary {
   @apply inline-flex items-center justify-center px-6 py-3 rounded-full
-         bg-primary texto-slate-950 texto-sm fuente-seminegrita
-         hover:transición bg-primary-dark;
+         bg-primary text-slate-950 text-sm font-semibold
+         hover:bg-primary-dark transition;
 }
