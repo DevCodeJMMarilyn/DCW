@@ -1,0 +1,32 @@
+/* 2) Importar las fuentes desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+/* 1) Importar Tailwind primero */
+@import "tailwindcss";
+
+/* 3) Definir tokens de diseño con @theme */
+@tema {
+  /* Tipografías: generan utilidades font-body y font-title */
+  --font-body: "Lato", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-title: "Escritura de baile", cursiva;
+
+  /* Colores personalizados: generan bg-bg, bg-primary, text-primary, etc. */
+  --color-bg: #020617; /* Fondo general (azul muy oscuro) */
+  --color-primary: #0ea5e9; /* Celeste principal */
+  --color-primary-dark: #0369a1;/* Celeste más oscuro para hover */
+
+  /* (Opcional) Puedes redefinir otros tokens aquí si quieres */
+}
+
+/* 4) Estilos globales mínimos */
+cuerpo {
+  @apply font-body bg-bg text-slate-100 antialiased;
+}
+
+/* 5) (Opcional) Pequeñas utilidades personalizadas si llegas a necesitarlas */
+
+.btn-primary {
+  @apply inline-flex items-center justify-center px-6 py-3 rounded-full
+         bg-primary texto-slate-950 texto-sm fuente-seminegrita
+         hover:transición bg-primary-dark;
+}
